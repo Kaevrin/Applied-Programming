@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ncdod\\OneDrive\\Documents\\Applied Programming\\Hello World\\Hello World\\Hello World.csproj": {}
+    "c:\\Users\\ncdod\\Documents\\Applied Programming\\Applied-Programming\\Hello World\\Hello World.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ncdod\\OneDrive\\Documents\\Applied Programming\\Hello World\\Hello World\\Hello World.csproj": {
+    "c:\\Users\\ncdod\\Documents\\Applied Programming\\Applied-Programming\\Hello World\\Hello World.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ncdod\\OneDrive\\Documents\\Applied Programming\\Hello World\\Hello World\\Hello World.csproj",
+        "projectUniqueName": "c:\\Users\\ncdod\\Documents\\Applied Programming\\Applied-Programming\\Hello World\\Hello World.csproj",
         "projectName": "Hello World",
-        "projectPath": "C:\\Users\\ncdod\\OneDrive\\Documents\\Applied Programming\\Hello World\\Hello World\\Hello World.csproj",
+        "projectPath": "c:\\Users\\ncdod\\Documents\\Applied Programming\\Applied-Programming\\Hello World\\Hello World.csproj",
         "packagesPath": "C:\\Users\\ncdod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ncdod\\OneDrive\\Documents\\Applied Programming\\Hello World\\Hello World\\obj\\",
+        "outputPath": "c:\\Users\\ncdod\\Documents\\Applied Programming\\Applied-Programming\\Hello World\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ncdod\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ncdod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
