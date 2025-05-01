@@ -22,6 +22,18 @@
   <script src="/socket.io/socket.io.js"></script>
   <script>
     const socket = io();
+
+    let username = prompt("Enter your username:");
+    if (!username) username = "Anonymous";
+    socket.emit('set username', username);
+
+    socket.on('welcome message', function(data) {
+    console.log("Received welcome message", data); // ✅ debug
+    const item = document.createElement('li');
+    item.textContent = `${data.username} has joined the chat`;
+    messages.appendChild(item);
+    });
+    
     const form = document.getElementById('form');
     const input = document.getElementById('input');
     const messages = document.getElementById('messages');
@@ -34,9 +46,9 @@
       }
     });
 
-    socket.on('chat message', function(msg) {
+    socket.on('chat message', function(data) {
       const item = document.createElement('li');
-      item.textContent = msg;
+      item.textContent = `${data.username}: ${data.message}`;
       messages.appendChild(item);
       window.scrollTo(0, document.body.scrollHeight);
     });

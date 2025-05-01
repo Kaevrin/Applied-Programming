@@ -10,13 +10,22 @@ app.use(express.static('public'));
 
 io.on('connection', (socket) => {
   console.log('A user connected');
+  let username = "Anonymous";
+  
+
+  socket.on('set username', (name) => {
+    username = name;
+    console.log(`${username} has joined the chat`);
+    io.emit(`${username} has joined the chat`);
+    io.emit('welcome message', { username });
+  });
 
   socket.on('chat message', (msg) => {
-    io.emit('chat message', msg);
+    io.emit('chat message', {username, message: msg});
   });
 
   socket.on('disconnect', () => {
-    console,log('A user disconnected');
+    console.log(`${username} disconnected`);
   });
 });
 
